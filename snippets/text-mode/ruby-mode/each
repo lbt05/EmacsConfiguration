@@ -1,0 +1,5 @@
+#name : each do |x| ... end
+# --
+each do |${1:x}|
+  $0$>
+end$>

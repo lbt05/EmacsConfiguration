@@ -1,0 +1,5 @@
+#name : it "should description" do ... end
+# --
+it "${1:description}" do
+  $0$>
+end$>

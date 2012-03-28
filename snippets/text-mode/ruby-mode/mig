@@ -1,0 +1,11 @@
+#name: migration N, :"do stuff" do ... end
+# --
+migration `(1+ (count-matches "migration [0-9]+" (point-min) (point-max)))`, :"$1" do
+  up do
+    $0
+  end
+
+  down do
+    raise "Don't migrate down"
+  end
+end
